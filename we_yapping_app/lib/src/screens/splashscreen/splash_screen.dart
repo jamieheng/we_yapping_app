@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:we_yapping_app/src/screens/home/home_screen.dart';
+import 'package:we_yapping_app/src/screens/onboarding/onboarding_screen.dart';
 import 'package:we_yapping_app/src/utils/base_colors.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,9 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(
-            builder: (context) =>
-                const HomeScreen(title: 'Flutter Demo Home Page')),
+        MaterialPageRoute(builder: (context) => const OnboardingScreen()),
       );
     });
   }
