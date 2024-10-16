@@ -26,23 +26,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: BaseColor.primaryColor,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.chat_bubble_outlined,
-              size: 100,
-              color: Colors.white,
-            ),
-            SizedBox(height: 20),
-            Text(
-              'WeYapping',
-              style: TextStyle(fontSize: 24, color: Colors.white),
-            ),
-          ],
+        child: Image.asset(
+          'assets/logos/logo_white.png',
+          width: 200,
+          height: 200,
         ),
       ),
     );
